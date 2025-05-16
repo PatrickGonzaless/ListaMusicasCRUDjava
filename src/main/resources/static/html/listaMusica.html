@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/listaMusica.css">
+    <title>TADS DSW - Projeto Semestral Individual</title>
+</head>
+
+<body>
+    <section id="container">
+        <div id="listContainer">
+            <div class="listTitle">
+                <h1>Listagem de Músicas</h1>
+            </div>
+            <div id="ok_msg" class="ok_msg">
+                <h1>Música incluida com sucesso</h1>
+            </div>
+
+            <div id="empty_msg" class="empty_msg">
+                <h1>Não há músicas cadastradas</h1>
+            </div>
+
+            <div id="tableContainer" class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Artista</th>
+                            <th>Ano lançamento</th>
+                        </tr>
+                    </thead>
+                    <tbody id="musicaList"></tbody>
+                </table>
+            </div>
+
+            <div class="buttonContainer">
+                <a href="../html/novaMusica.html"><button id="addButton"><span class="plus">+</span> Incluir
+                        Novo</button> </a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+<script src="../js/listaMusica.js" defer></script>
+
+</html>

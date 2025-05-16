@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.listTitle{
+    font-size: 25px;
+    margin-bottom: 3vh;
+}
+
+.ok_msg{
+    font-size: 20px;
+    background-color: lightgreen;
+    padding-right: 20vh;
+    padding-left: 3vh;
+    height: 6vh;
+    line-height: 6vh;
+    border-radius: 10px;
+    font-weight: lighter;
+    color: darkgreen;
+    
+}
+
+.empty_msg{
+    font-size: 20px;
+    background-color: lightcoral;
+    padding-right: 20vh;
+    padding-left: 3vh;
+    height: 6vh;
+    line-height: 6vh;
+    border-radius: 10px;
+    font-weight: lighter;
+    color: darkred;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 10px;
+    display: none;
+}
+
+.tableContainer {
+    width: 80%; /* Ajuste o tamanho como desejar (80%, 100%, 600px, etc.) */
+    margin: 0 auto;
+}
+
+thead {
+    background-color: #252525;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+}
+
+
+th, td {
+    width: 100%;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    
+}
+
+tbody tr {
+    background-color: #f4f4f9;
+}
+
+button{
+    background-color: rgb(0, 165, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+    
+.plus{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}

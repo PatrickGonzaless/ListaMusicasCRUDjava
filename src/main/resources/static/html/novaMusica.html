@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/novaMusica.css">
+    <title>TADS DSW - Projeto Semestral Individual</title>
+</head>
+
+<body>
+    <section id="container">
+        <h1 class="title">Inclusão de nova Música</h1>
+        <div class="formContainer">
+
+            <form id="musicaForm" action="">
+                <div class="inputGroup">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Preencha o título da música" required>
+
+                </div>
+                <div class="inputGroup">
+                    <label for="artista">Artista:</label>
+                    <input type="text" id="artista" name="artista" placeholder="Preencha o nome do artista" required>
+                </div>
+
+                <div class="inputGroup">
+                    <label for="anolancamento">Ano de Lançamento:</label>
+                    <input type="text" id="anolancamento" name="anolancamento"
+                        placeholder="Preencha o ano de lançamento da música" required>
+                </div>
+
+
+        </div>
+
+        <div class="buttonContainer">
+            <a href="../html/listaMusica.html"><button type="button" id="cancelButton">Cancelar</button></a>
+            <button type="submit" id="submitButton">Enviar</button>
+        </div>
+        </form>
+    </section>
+
+    <script src="../js/novaMusica.js"></script>
+</body>
+
+
+</html>
