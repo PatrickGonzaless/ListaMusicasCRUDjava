@@ -2,12 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   listMusics();
 });
-
-
 const tabelaMain = document.getElementById("tableContainer");
 const tabela = document.querySelector("table");
 const tbody = document.getElementById("musicaList");
 const emptyMessage = document.querySelector(".empty_msg");
+const okMessage = document.querySelector(".ok_msg");
 
 function listMusics() {
   fetch(`http://localhost:8080/musicas`, {
@@ -40,13 +39,14 @@ function listarMusicas(musicas) {
   tbody.innerHTML = "";
 
   if (musicas.length === 0) {
-    tabelaMain.style.display = "none";
+   tabelaMain.style.display = "none";
     emptyMessage.style.display = "block"; 
+    
     return;
   }
-   
   tabelaMain.style.display = "block";
   emptyMessage.style.display = "none";
+  okMessage.style.display = "block";
   
 
   musicas.forEach((musica) => {
